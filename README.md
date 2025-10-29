@@ -1,8 +1,7 @@
 # 🚀 Transformer-Based Security Framework for Detection of Advanced Persistent Threats (APTs)
 
 This repository contains the official implementation of our research work  
-**"Transformer-Based Security Framework for Detection of Advanced Persistent Threats"**,  
-developed as part of the M.Tech Major Technical Project (MTP).
+**"Transformer-Based Security Framework for Detection of Advanced Persistent Threats"**.
 
 ---
 
@@ -59,5 +58,9 @@ a large-scale semi-synthetic APT dataset containing realistic enterprise network
 ### ✂️ Dropped Columns
 The following columns were removed due to redundancy, sparsity, or non-generalizable identifiers:
 "src_ip, dst_ip, src_mac, dst_mac, requested_server_name, user_agent, Signature, content_type, client_fingerprint, server_fingerprint"
+
+### 🔢 Encoded Columns
+Categorical features such as `src_oui`, `dst_oui`, `application_name`,  
+`application_category_name`, `Activity`, and `DefenderResponse` were label-encoded.
 
 
